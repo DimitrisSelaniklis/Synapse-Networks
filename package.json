@@ -1,7 +1,6 @@
 {
-  "homepage": "https://dimitrisselaniklis.github.io/Synapse-Networks",
-  
   "name": "synapse-networks",
+  "homepage": "https://dimitrisselaniklis.github.io/synapse-networks/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

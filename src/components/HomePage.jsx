@@ -70,13 +70,14 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* Carousel Section */}
         <section>
           <h2 className="section-header">Τα Έργα Μας</h2>
           <Carousel />
         </section>
 
         {/* Posts Section */}
-        <h2 className="section-header">Τα Έργα Μας</h2>
+        {/* <h2 className="section-header">Τα Έργα Μας</h2>
         <section className="posts-section">
           <div className="post">
             <img src="images/rack_final.jpg" alt="Post 1" />
@@ -93,7 +94,7 @@ const HomePage = () => {
             <p>Short description for post three.</p>
             <button>Learn More</button>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
         <div className="contact-section">
@@ -116,6 +117,33 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <footer id="footer-wrapper" className="py-4 mt-auto">
+        <Container>
+          <Row>
+            <Col md={6}>
+              <h2>Synapse Networks ©</h2>
+              <p>
+                Έχετε ερωτήσεις ή χρειάζεστε λύσεις προσαρμοσμένες στις ανάγκες σας; 
+								Επικοινωνήστε μαζί μας για να συζητήσουμε τις επιλογές σας και να κανονίσουμε ένα ραντεβού. 
+								Είμαστε εδώ για να σας βοηθήσουμε να περάσετε στην επόμενη γενιά συνδεσιμότητας
+              </p>
+            </Col>
+            <Col md={6} className="text-md-end">
+              <h2>Επικοινωνήστε μαζί μας</h2>
+              <div className="d-flex justify-content-md-end align-items-center gap-2">
+                Email:
+                <a href="mailto:info@synapse-networks.gr">
+                  info@synapse-networks.gr
+                </a>
+              </div>
+            </Col>
+
+          </Row>
+        </Container>
+      </footer>
+
     </div>
   );
 };

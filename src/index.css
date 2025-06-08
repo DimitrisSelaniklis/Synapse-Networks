@@ -1230,6 +1230,51 @@ input, select, textarea {
 		margin: 2.5em 0 0 0;
 	}
 
+	.about-section {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		padding: 2rem 1.5rem; /* Add padding inside the section for spacing from edges */
+		max-width: 1200px;    /* Optional: to limit max width and center */
+		margin: 0 auto;       /* Center horizontally */
+		}
+
+		.about-image {
+		width: 35%;          /* Smaller image width */
+		order: 2;            /* image on the right */
+		border-radius: 8px;  /* optional: rounded corners */
+		}
+
+		.about-text {
+		width: 70%;          /* Text takes the rest */
+		order: 1;
+		}
+
+		/* Responsive */
+		@media (max-width: 768px) {
+		.about-section {
+			flex-direction: column;
+			align-items: center;
+			padding: 1rem;     /* less padding on smaller screens */
+		}
+
+		.about-image {
+			order: 1;
+			width: 60%;        /* bigger on mobile but still smaller than full */
+			max-width: none;
+			margin-bottom: 1rem;
+		}
+
+		.about-text {
+			order: 2;
+			width: 100%;
+		}
+	}
+
+
+
+
+
 	header.major {
 		/* border-bottom: solid 1px #dbdbdb; */
 		margin: 0 0 3em 1em;
@@ -1827,7 +1872,7 @@ input, select, textarea {
 		background-color: #5e8e8f;
 		background-position: top left, center center;
 		background-size: auto, cover;
-		padding: 3em 0;
+		/* padding: 3em 0; */
 	}
 
 	#main-wrapper {
@@ -1847,7 +1892,7 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		padding: 7em 0 7em 0;
+		/* padding: 7em 0 7em 0; */
 	}
 
 		.wrapper > .inner {
@@ -2402,6 +2447,17 @@ input, select, textarea {
 			}
 
 	}
+
+	/* .section-header::before {
+		content: "–";              
+		display: inline-block;    
+		font-size: 1.5em;          
+		color: #007BFF;            
+		margin-right: 0.5em;       
+		vertical-align: middle;    
+		font-weight: bold;         
+	} */
+
 
 	.section-header {
       text-align: center;

@@ -14,7 +14,13 @@ export default function DynamicImageCarousel() {
   if (!images.length) return <p>Loading images...</p>;
 
   return (
-    <Carousel interval={3000} pause="hover" data-bs-theme="dark" className="custom-carousel">
+    <Carousel 
+      interval={3000} 
+      pause="hover" 
+      data-bs-theme="dark" 
+      indicators={false} // <-- This hides the bottom dots
+      className="custom-carousel"
+      >
       {images.map((src, index) => (
         <Carousel.Item key={index}>
           <img
